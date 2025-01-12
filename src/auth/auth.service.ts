@@ -18,7 +18,7 @@ export class AuthService {
     private jwtService: JwtService,
   ) {}
 
-  async signUp(signUpBody: User, host): Promise<{ token: string }> {
+  async signUp(signUpBody: User, host) {
     const { name, email, password, type, image_url } = signUpBody;
 
     const userExist = await this.userModel.findOne({ email });
@@ -38,7 +38,7 @@ export class AuthService {
       password: hashedPassword,
     });
     const token = this.jwtService.sign({ id: user._id });
-    return { token };
+    return { token, type: user.type };
   }
 
   async login(loginBody: LoginDto) {
