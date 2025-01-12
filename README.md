@@ -19,7 +19,7 @@ Now you can proceed to project installation.
 # move to the trendai-backend folder install all packages
 > cd trendai-backend
 > npm install
-# copy env.example to .env
+# copy .env.example to .env
 > cp env.example .env
 # modify the DB environment accordingly
 ```  
