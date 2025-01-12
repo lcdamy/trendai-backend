@@ -12,7 +12,17 @@ This is a backend project for a platform enabling brands to promote products. In
 - [nestjs Version: 10.4.9](https://nestjs.com/)
 - [MongoDb Version: 8.0.4](https://www.mongodb.com/try/download/community)
 
-
+Now you can proceed to project installation.
+```bash
+# Clone the project
+> git clone git@github.com:lcdamy/trendai-backend.git
+# move to the trendai-backend folder install all packages
+> cd trendai-backend
+> npm install
+# copy env.example to .env
+> cp env.example .env
+# modify the DB environment accordingly
+```  
 
 ## Run the project
 
