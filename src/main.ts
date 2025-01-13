@@ -8,11 +8,12 @@ async function bootstrap() {
   app.useGlobalPipes(new ValidationPipe());
   // Enable CORS
   app.enableCors({
-    origin: ["https://trendai-backend-6oane8f63-lcdamys-projects.vercel.app"], // Allow requests from any origin. Replace '*' with specific origins for better security.
+    origin: ["https://trendai-frontend.vercel.app"], // Allow requests from any origin. Replace '*' with specific origins for better security.
     methods: 'GET,HEAD,PUT,PATCH,POST,DELETE,OPTIONS', // Specify allowed HTTP methods.
     allowedHeaders: 'Content-Type, Accept, Authorization', // Specify allowed headers.
     credentials: true, // Enable if you need to allow credentials like cookies.
   });
+
   
   await app.listen(process.env.PORT ?? 3000);
 }
