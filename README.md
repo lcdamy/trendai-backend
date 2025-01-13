@@ -13,6 +13,7 @@ This is a backend project for a platform enabling brands to promote products. In
 - [MongoDb Version: 8.0.4](https://www.mongodb.com/try/download/community)
 
 Now you can proceed to project installation.
+
 ```bash
 # Clone the project
 > git clone git@github.com:lcdamy/trendai-backend.git
@@ -22,6 +23,7 @@ Now you can proceed to project installation.
 # copy .env.example to .env
 > cp env.example .env
 # modify the DB environment accordingly
+
 ```  
 
 ## Run the project
@@ -35,6 +37,7 @@ $ npm run start:dev
 
 # production mode
 $ npm run start:prod
+
 ```
 
 
