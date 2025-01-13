@@ -6,15 +6,13 @@ async function bootstrap() {
   const app = await NestFactory.create(AppModule);
 
   app.useGlobalPipes(new ValidationPipe());
-  // Enable CORS
+  // Enable CORS with all origins allowed
   app.enableCors({
-    origin: ["https://trendai-frontend.vercel.app"], // Allow requests from any origin. Replace '*' with specific origins for better security.
-    methods: 'GET,HEAD,PUT,PATCH,POST,DELETE,OPTIONS', // Specify allowed HTTP methods.
-    allowedHeaders: 'Content-Type, Accept, Authorization', // Specify allowed headers.
-    credentials: true, // Enable if you need to allow credentials like cookies.
+    origin: '*', // Allow all origins
+    methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
+    credentials: true, // If you need to allow credentials (cookies, etc.)
   });
 
-  
   await app.listen(process.env.PORT ?? 3000);
 }
 bootstrap();
