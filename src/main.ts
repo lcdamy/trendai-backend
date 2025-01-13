@@ -9,7 +9,7 @@ async function bootstrap() {
 
   // CORS configuration
   app.enableCors({
-    origin: ['http://localhost:3000', 'https://trendaime.netlify.app'],
+    origin: ['http://localhost:3000', 'https://trendai-frontend.vercel.app'],
 
     methods: ['GET', 'POST', 'PUT', 'PATCH', 'DELETE', 'OPTIONS'],
 
